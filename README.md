@@ -43,3 +43,4 @@ I write about AI deployment in Australian regulated sectors, sovereign infrastru
 - Blog: [craiglawton.com](https://craiglawton.com)
 - LinkedIn: [linkedin.com/in/craiglawton](https://linkedin.com/in/craiglawton)
 - Podcast: [Building a Better Geek](https://buildingabettergeek.com)
+
