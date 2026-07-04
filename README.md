@@ -28,7 +28,7 @@ Writing and music are the same problem: structure, voice, and knowing when to st
 
 - **[bullpen](https://github.com/cclawton/bullpen)** — the writing side. Multi-agent pipeline from research through publication, with per-profile voice configuration.
 - **[asian-sentry-techniques](https://github.com/cclawton/asian-sentry-techniques)** — the music side. Orchestration and composition notes from working in Logic Pro with foundation models. AI as co-composer, not autocomplete.
-- **[voxtral-bedrock-sydney](https://github.com/cclawton/voxtral-bedrock-sydney)** — live demo of Mistral Voxtral on AWS Bedrock in ap-southeast-2. Mic capture, transcription, audio Q&A, multi-turn chat. Built to show what's possible in the Sydney region today.
+- **[music21-mcp](https://github.com/cclawton/music21-mcp)** — MCP server exposing 11 music21 MIDI tools to AI agents. Key detection, transposition, velocity, quantization, reharmonization, melody harmonization. Spec-driven, TDD, 82 tests.
 
 ---
 
