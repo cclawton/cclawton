@@ -14,11 +14,11 @@ Headless autonomous loops running on a Mac mini — workers that produce, a supe
 
 ---
 
-## Sovereign AI evaluation
+## AI evaluation
 
-Foundation models don't behave the same in Australian healthcare, government, or financial services as they do on leaderboards. Hexapla is the measurement layer for that gap.
+Leaderboards are useful, but they do not tell you how a model behaves in a specific operating context. I am building tools that measure model performance against local tasks, constraints, and evidence.
 
-- **[hexapla](https://github.com/cclawton/hexapla)** — evaluation framework and manifesto for the foundation-model era in Australia. Domain-adapted benchmarks, novel backends, Australian regulatory context. Built on the belief that measurement precedes trust.
+- **[hexapla](https://github.com/cclawton/hexapla)**: early evaluation harness for running repeatable model tests, scoring outputs, and producing comparable result matrices.
 
 ---
 
