@@ -1,42 +1,47 @@
 # Craig Lawton
 
-I build agentic systems, evaluate foundation models for Australian regulated sectors, and use AI as a creative instrument. The three connect: I evaluate the models, orchestrate the agents, and put the output to work.
+I build agentic systems, evaluate foundation models for Australian operating contexts, and make tools for creative work. The common thread is bounded systems, evidence, and keeping people in control.
 
 ---
 
 ## Agentic systems
 
-Headless autonomous loops running on a Mac mini — workers that produce, a supervisor that triages, Signal for delivery. No dashboards, no polling.
+Headless autonomous loops run on a Mac mini, with workers that produce, a supervisor that triages, and Signal for delivery. No dashboards or polling.
 
-- **[supervisor](https://github.com/cclawton/supervisor)** — two-layer producer/verifier architecture. Workers write run files; a separate triage agent classifies them and signals only when something actually matters. Integrates with any tool that writes to the filesystem — Obsidian, CI, scrapers, task managers.
-- **[bullpen](https://github.com/cclawton/bullpen)**: profile-driven writing pipeline with bounded OpenCode stages, role-specific model routing, transactional validation, and optional Claude Code agents for interactive use. Voice and constraints live in configuration.
-- **[podcastindex-mcp-server](https://github.com/cclawton/podcastindex-mcp-server)** — MCP server for the Podcast Index API. Exposes search, episode lookup, and feed discovery as tools any MCP-aware agent can call.
+- **[supervisor](https://github.com/cclawton/supervisor)**: two-layer producer and verifier architecture. Workers write run files; a separate triage agent classifies them and signals only when something matters. It can integrate with any tool that writes to the filesystem, including Obsidian, CI, scrapers, and task managers.
+- **[bullpen](https://github.com/cclawton/bullpen)**: profile-driven writing pipeline with bounded OpenCode stages, role-specific model routing, structural validation, and rollback on rejection. Optional Claude Code agents support a more flexible interactive workflow. The human editor controls publication.
+- **[podcastindex-mcp-server](https://github.com/cclawton/podcastindex-mcp-server)**: Podcast Index search, episode lookup, and feed discovery exposed as MCP tools.
 
 ---
 
-## AI evaluation
+## Keeping models honest
 
-Leaderboards are useful, but they do not tell you how a model behaves in a specific operating context. I am building tools that measure model performance against local tasks, constraints, and evidence.
+Leaderboards are a starting point. I am interested in repeatable tests tied to local tasks, constraints, cost, and evidence.
 
 - **[hexapla](https://github.com/cclawton/hexapla)**: early evaluation harness for running repeatable model tests, scoring outputs, and producing comparable result matrices.
 
 ---
 
-## AI creative
+## AI for creatives
 
-Writing and music are the same problem: structure, voice, and knowing when to stop. I use AI as a collaborator on both.
+I use AI and automation to help people inspect, transform, and finish work they already care about. The source material and creative decisions remain human. [Bullpen](https://github.com/cclawton/bullpen) covers the writing side; these projects cover music.
 
-- **[bullpen](https://github.com/cclawton/bullpen)**: the writing side. Bounded research, drafting, trimming, and safety stages run through an editor-controlled pipeline with profile-specific voice and model routing.
-- **[asian-sentry-techniques](https://github.com/cclawton/asian-sentry-techniques)** — the music side. Orchestration and composition notes from working in Logic Pro with foundation models. AI as co-composer, not autocomplete.
-- **[music21-mcp](https://github.com/cclawton/music21-mcp)** — MCP server exposing 16 music21 MIDI tools to AI agents. Key detection, chord analysis, transposition, velocity, quantization, reharmonization, melody extraction, form analysis, and pattern search. Spec-driven, TDD, 120 tests.
-- **[preset-semantic](https://github.com/cclawton/preset-semantic)** — local-first semantic search for music-production presets across Helix, Arturia, and Decent Sampler. ChromaDB and sentence-transformer embeddings turn musical descriptions into loadable preset candidates through a CLI or MCP tool.
-- **[reascript-mcp](https://github.com/cclawton/reascript-mcp)** — MCP server for Reaper/ReaScript project control and state readback. Parses `.rpp` projects, generates Lua ReaScripts, and writes smoke-test scripts for REAPER execution. The DAW execution layer for the agentic music stack.
+- **[asian-sentry-techniques](https://github.com/cclawton/asian-sentry-techniques)**: orchestration and composition notes from working in Logic Pro with foundation models. AI as co-composer, not autocomplete.
+- **[music21-mcp](https://github.com/cclawton/music21-mcp)**: symbolic MIDI analysis and editing operations exposed through MCP, built on music21. It supports key and chord analysis, transposition, quantization, melody extraction, structural heuristics, and basic harmonization.
+- **[preset-semantic](https://github.com/cclawton/preset-semantic)**: local-first semantic search for music-production presets across Helix, Arturia, and Decent Sampler. It turns musical descriptions into loadable preset candidates through a CLI or MCP tool.
+- **[reascript-mcp](https://github.com/cclawton/reascript-mcp)**: tools for reading REAPER project state and generating Lua ReaScripts for actions that can be checked inside REAPER.
+
+---
+
+## Small tools
+
+I also build local-first utilities for narrow problems. **[dv-joiner](https://github.com/cclawton/dv-joiner)** sorts timestamped DV clips and creates grouped, deinterlaced H.264/AAC access copies with FFmpeg. The original DV files remain the preservation masters.
 
 ---
 
 ## Writing
 
-I write about AI deployment in Australian regulated sectors, sovereign infrastructure, and building with agents at [craiglawton.com](https://craiglawton.com). AWS-affiliated — I disclaim my role, not my opinions.
+I write about AI deployment in Australian regulated sectors, sovereign infrastructure, and building with agents at [craiglawton.com](https://craiglawton.com). I am AWS-affiliated; the writing is personal.
 
 ---
 
@@ -45,4 +50,3 @@ I write about AI deployment in Australian regulated sectors, sovereign infrastru
 - Blog: [craiglawton.com](https://craiglawton.com)
 - LinkedIn: [linkedin.com/in/craiglawton](https://linkedin.com/in/craiglawton)
 - Podcast: [Building a Better Geek](https://buildingabettergeek.com)
-
