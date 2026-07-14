@@ -29,6 +29,7 @@ Writing and music are the same problem: structure, voice, and knowing when to st
 - **[bullpen](https://github.com/cclawton/bullpen)**: the writing side. Bounded research, drafting, trimming, and safety stages run through an editor-controlled pipeline with profile-specific voice and model routing.
 - **[asian-sentry-techniques](https://github.com/cclawton/asian-sentry-techniques)** — the music side. Orchestration and composition notes from working in Logic Pro with foundation models. AI as co-composer, not autocomplete.
 - **[music21-mcp](https://github.com/cclawton/music21-mcp)** — MCP server exposing 16 music21 MIDI tools to AI agents. Key detection, chord analysis, transposition, velocity, quantization, reharmonization, melody extraction, form analysis, and pattern search. Spec-driven, TDD, 120 tests.
+- **[preset-semantic](https://github.com/cclawton/preset-semantic)** — local-first semantic search for music-production presets across Helix, Arturia, and Decent Sampler. ChromaDB and sentence-transformer embeddings turn musical descriptions into loadable preset candidates through a CLI or MCP tool.
 - **[reascript-mcp](https://github.com/cclawton/reascript-mcp)** — MCP server for Reaper/ReaScript project control and state readback. Parses `.rpp` projects, generates Lua ReaScripts, and writes smoke-test scripts for REAPER execution. The DAW execution layer for the agentic music stack.
 
 ---
