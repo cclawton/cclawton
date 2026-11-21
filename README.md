@@ -4,6 +4,16 @@ I build agentic systems, evaluate foundation models for Australian operating con
 
 ---
 
+## AWS samples
+
+Sample code I built in my role at AWS, published from my work account, [@cclawton-aws](https://github.com/cclawton-aws). These are reference implementations, not production systems, and the views here remain my own.
+
+- **Benchmark-to-Build** ([post](https://builder.aws.com/content/3ELErUKlnszRAEbcBpF0aBF4dAV/benchmark-to-build-evaluating-and-adapting-foundation-models-for-national-context), co-written with Brenda Dang · [workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/3764e7a5-666d-46f4-96e6-97b059b2527e/en-US) · [code](https://github.com/aws-samples/sample-benchmark-to-build)): evaluating and adapting foundation models for national context. Builds a jurisdiction-specific evaluation set from Australian legislation, scores 14 models two independent ways, then compares fine-tuning, retrieval and agentic search on the same benchmark.
+- **Delphi** ([post](https://builder.aws.com/content/3KktaXNV9u7GSo0LY6hBvyColHK/delphi-a-learned-cross-model-router-on-amazon-bedrock-agentcore) · [code](https://github.com/aws-samples/sample-agentcore-delphi)): learned cross-model router on Amazon Bedrock AgentCore Runtime. It picks a foundation model per request across families such as Nova, Llama, Gemma and Claude, and ships a test harness that checks whether routing beats a single model on quality and cost, and reports when it does not.
+- **Kiro Enterprise Governance Power** ([post](https://builder.aws.com/content/32UcScOGJhEUcUCrndLoy0Zrm3k/automating-enterprise-compliance-with-a-custom-kiro-power-building-a-to-do-app-under-governance) · [code](https://github.com/aws-samples/sample-kiro-enterprise-governance)): a Kiro Power for enterprise compliance workflows: standards enforcement through Bedrock Knowledge Bases, DOCX/PDF to markdown and back for spec-driven development, and a jurisdiction-agnostic AI assurance walkthrough.
+
+---
+
 ## Keeping models honest
 
 Leaderboards are a starting point. I am interested in repeatable tests tied to local tasks, constraints, cost, and evidence.
@@ -11,15 +21,6 @@ Leaderboards are a starting point. I am interested in repeatable tests tied to l
 - **[hexapla](https://github.com/cclawton/hexapla)**: early evaluation harness for running repeatable model tests, scoring outputs, and producing comparable result matrices.
 - **[react-harness](https://github.com/cclawton/react-harness)**: instrumented ReAct loop for comparing LLM coding agents on multi-file tasks, measuring success, tool-call efficiency, error recovery, and dollar cost. Includes a small GLM-5.2 vs Claude Opus 4.8 run, with caveats stated.
 - **[voxtral-bedrock-sydney](https://github.com/cclawton/voxtral-bedrock-sydney)**: local web app demoing Mistral Voxtral on AWS Bedrock in ap-southeast-2, covering transcription, audio Q&A, summarisation, and translation with data kept in Australia.
-
----
-
-## AWS samples
-
-Sample code I built in my role at AWS. These are reference implementations, not production systems, and the views here remain my own.
-
-- **[sample-agentcore-delphi](https://github.com/aws-samples/sample-agentcore-delphi)**: learned cross-model router on Amazon Bedrock AgentCore Runtime. It picks a foundation model per request across families such as Nova, Llama, Gemma and Claude, and ships a test harness that checks whether routing beats a single model on quality and cost, and reports when it does not.
-- **[sample-kiro-enterprise-governance](https://github.com/aws-samples/sample-kiro-enterprise-governance)**: a Kiro Power for enterprise compliance workflows: standards enforcement through Bedrock Knowledge Bases, DOCX/PDF to markdown and back for spec-driven development, and a jurisdiction-agnostic AI assurance walkthrough.
 
 ---
 
